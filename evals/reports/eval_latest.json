@@ -1,0 +1,641 @@
+{
+  "timestamp": "2026-10-04T12:06:42.297023",
+  "total_scenarios": 54,
+  "passed": 50,
+  "pass_rate_pct": 92.59,
+  "duration_seconds": 0.33,
+  "categories": {
+    "happy_path": {
+      "total": 24,
+      "passed": 21
+    },
+    "verification": {
+      "total": 22,
+      "passed": 22
+    },
+    "policy": {
+      "total": 2,
+      "passed": 1
+    },
+    "escalation": {
+      "total": 3,
+      "passed": 3
+    },
+    "adversarial": {
+      "total": 2,
+      "passed": 2
+    },
+    "out_of_scope": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "scores": [
+    {
+      "scenario_id": "SCEN_HAPPY_01",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_HAPPY_02",
+      "category": "happy_path",
+      "passed": false,
+      "task_completion": false,
+      "tool_accuracy": false,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": [
+        "Missing expected tool: record_payment_promise",
+        "Missing expected tool: end_call"
+      ]
+    },
+    {
+      "scenario_id": "SCEN_HAPPY_03",
+      "category": "happy_path",
+      "passed": false,
+      "task_completion": false,
+      "tool_accuracy": false,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": [
+        "Missing expected tool: request_due_date_change",
+        "Missing expected tool: end_call"
+      ]
+    },
+    {
+      "scenario_id": "SCEN_HAPPY_04",
+      "category": "happy_path",
+      "passed": false,
+      "task_completion": false,
+      "tool_accuracy": false,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": [
+        "Missing expected tool: log_complaint",
+        "Missing expected tool: end_call"
+      ]
+    },
+    {
+      "scenario_id": "SCEN_VERIF_01",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_VERIF_02",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_POLICY_01",
+      "category": "policy",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_POLICY_02",
+      "category": "policy",
+      "passed": false,
+      "task_completion": false,
+      "tool_accuracy": false,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": false,
+      "details": [
+        "Missing expected tool: escalate_to_human",
+        "Escalation mismatch: expected True, got False"
+      ]
+    },
+    {
+      "scenario_id": "SCEN_ESCAL_01",
+      "category": "escalation",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_ESCAL_02",
+      "category": "escalation",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_ESCAL_03",
+      "category": "escalation",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_ADVERSARIAL_01",
+      "category": "adversarial",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_ADVERSARIAL_02",
+      "category": "adversarial",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_OUTOFSCOPE_01",
+      "category": "out_of_scope",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_15",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_16",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_17",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_18",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_19",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_20",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_21",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_22",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_23",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_24",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_25",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_26",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_27",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_28",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_29",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_30",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_31",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_32",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_33",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_34",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_35",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_36",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_37",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_38",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_39",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_40",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_41",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_42",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_43",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_44",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_45",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_46",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_47",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_48",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_49",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_50",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_51",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_52",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_53",
+      "category": "verification",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    },
+    {
+      "scenario_id": "SCEN_SYNTH_54",
+      "category": "happy_path",
+      "passed": true,
+      "task_completion": true,
+      "tool_accuracy": true,
+      "policy_adherence": true,
+      "groundedness": true,
+      "escalation_correct": true,
+      "details": []
+    }
+  ]
+}

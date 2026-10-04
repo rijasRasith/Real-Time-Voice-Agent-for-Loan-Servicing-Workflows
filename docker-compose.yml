@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  voice-loan-agent:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - DEEPGRAM_API_KEY=${DEEPGRAM_API_KEY}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+      - DATABASE_URL=sqlite:///./loan_agent.db
+    volumes:
+      - ./replay_store:/app/replay_store
+      - ./loan_agent.db:/app/loan_agent.db

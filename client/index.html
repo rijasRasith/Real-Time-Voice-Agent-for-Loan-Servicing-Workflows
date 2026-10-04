@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Finance - Loan Voice Agent</title>
+  <link rel="stylesheet" href="/client/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo-mark">NF</div>
+        <div>
+          <h1>Nova Finance Voice Agent</h1>
+          <p class="subtitle">Real-Time Loan Servicing Assistant</p>
+        </div>
+      </div>
+      <div class="header-status">
+        <span id="connectionBadge" class="badge badge-disconnected">Disconnected</span>
+        <button id="connectBtn" class="btn btn-primary">Start Call</button>
+      </div>
+    </header>
+
+    <div class="dashboard-grid">
+      <main class="main-panel">
+        <div class="call-bar">
+          <div class="agent-indicator">
+            <div id="agentStateOrb" class="state-orb orb-idle"></div>
+            <div>
+              <div class="state-label">Agent Status</div>
+              <div id="agentStateText" class="state-value">Ready to Connect</div>
+            </div>
+          </div>
+          <div class="session-info">
+            <div>Session: <span id="sessionIdText" class="mono">--</span></div>
+            <div>Call ID: <span id="callIdText" class="mono">--</span></div>
+          </div>
+        </div>
+
+        <div class="transcript-card">
+          <div class="card-title">Live Transcript</div>
+          <div id="transcriptBox" class="transcript-stream">
+            <div class="message system-msg">Click "Start Call" and speak into your microphone to begin.</div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="telemetry-card">
+          <div class="card-title">Latency & Telemetry</div>
+          <div class="metric-row">
+            <span>End-to-End Latency:</span>
+            <span id="metricE2E" class="mono metric-val">-- ms</span>
+          </div>
+          <div class="metric-row">
+            <span>LLM First Token:</span>
+            <span id="metricTTFT" class="mono metric-val">-- ms</span>
+          </div>
+          <div class="metric-row">
+            <span>TTS Generation:</span>
+            <span id="metricTTS" class="mono metric-val">-- ms</span>
+          </div>
+          <div class="metric-row">
+            <span>Interruption Latency:</span>
+            <span id="metricInterrupt" class="mono metric-val">-- ms</span>
+          </div>
+        </div>
+
+        <div class="test-ids-card">
+          <div class="card-title">Demo Test Profiles</div>
+          <div class="profile-item">
+            <strong>Customer:</strong> C-0001 (Arjun Sharma)<br>
+            <strong>Last 4:</strong> 4512 | <strong>PIN:</strong> 849201<br>
+            <strong>Status:</strong> Active Personal Loan
+          </div>
+          <div class="profile-item">
+            <strong>Customer:</strong> C-0005 (Sneha Verma)<br>
+            <strong>Flag:</strong> Do-Not-Call / Escalation Test
+          </div>
+          <div class="profile-item">
+            <strong>Customer:</strong> C-0009 (Vikram Patel)<br>
+            <strong>Status:</strong> 95 Days Overdue Loan
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="/client/app.js"></script>
+</body>
+</html>
